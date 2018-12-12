@@ -1,0 +1,14 @@
+<repositories>
+	<repository>
+		<id>oracle</id>
+		<name>Oracle JDBC Driver Repository</name>
+		<url>http://maven.jahia.org/maven2</url>
+	</repository>
+</repositories>
+
+<!-- oracle driver -->
+<dependency>
+    <groupId>com.oracle</groupId>
+    <artifactId>ojdbc6</artifactId>
+    <version>12.1.0.1</version>
+</dependency>

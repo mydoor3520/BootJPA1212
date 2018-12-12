@@ -1,0 +1,11 @@
+DDL	Data Definition Language
+	create, alter, drop, rename, truncate
+	구조를 정의하기 위한 명령군
+DML	Data Manipulation Language
+	select, insert, update, delete
+	데이터에 변형을 가하기 위한 명령군
+	커밋/롤백 가능
+DCL	Data Control Language
+	트랜잭선 제어
+	commit, rollback, savepoint
+	grant, revoke
