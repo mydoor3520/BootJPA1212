@@ -47,7 +47,7 @@ public class Boot03jpaApplicationTests {
 		}
 	}
 	
-	@Test
+//	@Test
 	public void select3() {
 		Optional<Student> result = repo.findById(1L);
 		log.info("present = {}", result.isPresent()); //있는지 여부
@@ -55,6 +55,20 @@ public class Boot03jpaApplicationTests {
 		
 		Student result2 = repo.getOne(1L); // FetchType.EAGER 설정이 필요
 		log.info("result2 = {}", result2);
+	}
+	
+	
+//@Test
+	public void select4() {
+		for(Student stu : repo.findAllByOrderByIdAsc()) {
+			log.info(stu.toString());
+		}
+	}
+	@Test
+	public void select5() {
+		for(Student stu : repo.findAllByOrderByIdAsc()) {
+			log.info(repo.list().toString());
+		}
 	}
 }
 
