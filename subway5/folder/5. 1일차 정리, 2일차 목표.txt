@@ -1,0 +1,44 @@
+Rest Service
+	@RestController = @Controller + @ResponseBody
+	CRUD만 처리하는 웹서비스(화면처리는 클라이언트에게 위임)
+Swagger
+	Rest Service의 요청 처리를 시각화하는 프레임워크
+JPA
+	Java Object로 Database 처리를 수행하기 위한 표준 기술
+	장점은 객체 지향형 언어와 관계형 데이터베이스의 효율성 극대화
+	단점은 알아야 할 기술이 많다
+
+오늘의 목표 
+	지하철 역 정보 제공 서비스
+	역 정보 = No + 이름 + 호선 + 지역 + 등록시각 + 수정시각 + 좋아요
+
+/subway				POST	등록
+
+/subway/json			GET	전체목록(json)
+/subway/json/name/{name}	GET	이름검색(json)
+/subway/json/area/{area}	GET	지역검색(json)
+/subway/json/line/{line}	GET	노선검색(json)
+
+/subway/xml			GET	전체목록(json)
+/subway/xml/name/{name}		GET	이름검색(json)
+/subway/xml/area/{area}		GET	지역검색(json)
+/subway/xml/line/{line}		GET	노선검색(json)
+
+/subway				PUT	정보수정
+/subway/like/{id}		PUT	좋아요
+
+/subway/{id}			DELETE	삭제
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
