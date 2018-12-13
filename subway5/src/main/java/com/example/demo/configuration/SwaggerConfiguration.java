@@ -29,7 +29,7 @@ public class SwaggerConfiguration {
 						//[1] 전체
 						//.apis(RequestHandlerSelectors.any())
 						//[2] 패키지 제한
-						.apis(RequestHandlerSelectors.basePackage("com.example.demo.controller"))
+						.apis(RequestHandlerSelectors.basePackage("com.example.demo.Controller"))
 								.paths(PathSelectors.any())
 					.build();
 	}

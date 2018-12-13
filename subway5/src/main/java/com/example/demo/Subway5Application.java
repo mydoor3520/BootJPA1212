@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Subway5Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Subway5Application .class, args);
+		SpringApplication.run(Subway5Application.class, args);
 	}
 
 }

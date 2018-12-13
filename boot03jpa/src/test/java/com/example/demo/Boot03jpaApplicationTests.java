@@ -41,8 +41,8 @@ public class Boot03jpaApplicationTests {
 
 //	@Test
 	public void select2() {
-		List<Student> list = repo.findAll();
-		for(Student stu : list) {
+		List<Student> list =repo.findAll();
+		 for(Student stu : list) {
 			log.info(stu.toString());
 		}
 	}
@@ -58,7 +58,7 @@ public class Boot03jpaApplicationTests {
 	}
 	
 	
-//@Test
+//  @Test
 	public void select4() {
 		for(Student stu : repo.findAllByOrderByIdAsc()) {
 			log.info(stu.toString());
